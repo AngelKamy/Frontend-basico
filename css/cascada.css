@@ -1,0 +1,19 @@
+h2{
+    color: red;
+    color: blue;
+    text-decoration: underline;
+}
+#red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+#bl{
+    font-weight: bolder;
+    font-size: larger;
+}
+table{
+    text-align: center;
+    border: solid black 3px;
+}

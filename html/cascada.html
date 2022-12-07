@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/cascada.css">
+    <title>Cascada y especifidad</title>
+</head>
+<body>
+    <h1>Cascada y especifidad</h1>
+    <div>
+        <h2>Cascada:</h2>
+        <p>El orden del código CSS importa, el IDE lee el CSS de arriba hacia abajo y en caso de requerirlo sobre escribe el código de una etiqueta</p>
+        <p>Por ejemplo el h2 de: Cascada tiene dos colores <span id="red">rojo</span> y <span class="blue">azul</span> pero como <span class="blue" id="bl">azul</span> está más abajo en el código éste prevalece sobre el rojo</p>
+        
+    </div>
+
+    <div>
+        <h2>Especifidad:</h2>
+        <p>La especifidad en un cpodigo CSS sirve para que el navegador pueda decidir la prioridad de los estilos de un documento</p>
+        <p>Aquí una tabla de especifidad</p>
+
+        <table>
+           <thead>
+            <tr>
+                <th>Valor</th>
+                <th>Selector</th>
+            </tr>
+           </thead> 
+
+           <tbody>
+            <tr>
+                <td>X 10000</td>
+                <td>!Importan</td>
+            </tr>
+            <tr>
+                <td>X1000</td>
+                <td>Estilos en línea</td>
+            </tr>
+
+            <tr>
+                <td>X100</td>
+                <td>#id</td>
+            </tr>
+
+            <tr>
+                <td>X10</td>
+                <td>Clases, atributos y pseudoclases</td>
+            </tr>
+
+            <tr>
+                <td>X1</td>
+                <td>Elementos y pseudolementos</td>
+            </tr>
+
+            <tr>
+                <td>X.1</td>
+                <td>Seletor Universal</td>
+            </tr>
+           </tbody>
+        </table>
+    </div>
+
+    <div>
+        <p>Aquí una <a href="http://specificity.keegan.st">calculadora de especifidad</a></p>
+    </div>
+</body>
+</html>
