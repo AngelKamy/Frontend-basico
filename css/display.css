@@ -1,0 +1,65 @@
+.block{
+    background-color: darkblue;
+    color: azure;
+    font-weight: 800;
+    width: 200px;
+    height: 200px;
+}
+li{
+    margin: 20px;
+}
+
+a{
+    color: whitesmoke;
+    font-weight: 900;
+    background-color: darkorchid;
+    margin: 50px;
+}
+section>a,section>p>a{
+    font-size: small;
+    background-color: white;
+    color:deepskyblue;
+    margin-left: auto;
+}
+section>a:hover,section>p>a:hover{
+    color: blue;
+}
+button{
+    background-color: steelblue;
+    color: beige;
+    width: 100px;
+    height: 50px;
+}
+.container{
+    display: flex;
+    background-color: blueviolet;
+    width: 400px;
+    height: 400px;
+    justify-content: space-between;
+    align-items: center;
+}
+.item{
+    background-color: blanchedalmond;
+    width: 20px;
+    height: 20px;
+}
+.item:nth-child(2n+1){
+    background-color: darkcyan;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: royalblue;
+    width: 400px;
+    height: 400px;
+}
+.element{
+    background-color: blanchedalmond;
+    width: 100px;
+    height: 100px;
+}
+.element:nth-child(1){
+    background-color: brown;
+    grid-column: 3/3;
+}
