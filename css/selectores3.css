@@ -1,0 +1,33 @@
+p{
+    color: chocolate;
+}
+.hover{
+    color: black;
+}
+.hover:hover{
+    color: blue
+}
+li:nth-child(4){
+    color: red;
+}
+p::first-letter{
+    color: darkgreen;
+    font-size: medium;
+}
+p::before{
+    content: "🎃";
+}
+::placeholder{
+    color: grey;
+    font-weight: bold;
+    font-family: monospace;
+}
+.referencia{
+    color: black;
+}
+a:link{
+    color: crimson;
+}
+a:visited{
+    color: lime;
+}
