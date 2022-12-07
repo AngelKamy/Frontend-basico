@@ -1,0 +1,11 @@
+div h1{
+    color: lime;
+}
+div>div{
+    background-color: plum;
+}
+
+div + section{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 800;
+}
