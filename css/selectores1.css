@@ -1,0 +1,15 @@
+div{
+    background-color: skyblue;
+}
+.ejemplo{
+    color: blueviolet;
+}
+#selector{
+    font-weight: bolder;
+}
+a{
+    color: deeppink;
+}
+a:hover{
+    color: slateblue;
+}
