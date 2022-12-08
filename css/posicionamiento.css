@@ -8,12 +8,15 @@ nav{
     background-color: darkcyan;
     position: fixed;
 }
-ul>li{
+ul,ol{
     position: sticky;
 }
 li{
     font-size: large;
     margin: 30px;
+}
+h3{
+    background-color: blueviolet;
 }
 .container{
     width: 500px;

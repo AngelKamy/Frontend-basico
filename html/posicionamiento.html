@@ -43,36 +43,79 @@
                 Este valor crea un nuevo contexto de apilamiento cuando el valor de z-index no es auto. Elementos
                 absolutamente posicionados pueden tener margen, y no colapsan con ningún otro margen.
             </p>
-            <p>Si agrgamos un elemento color verde y lo convertimos en position absolute y le damos un left 50px y top 100px se vería así:</p>
+            <p>Si agrgamos un elemento color verde y lo convertimos en position absolute y le damos un left 50px y top
+                100px se vería así:</p>
             <div class="container tomato">
                 <div class="item green">
 
                 </div>
             </div>
 
-            </div>
+    </div>
 
-            <li><b>Fixed</b></li>
-            <p>
-                El elemento es removido del flujo normal del documento, sin crearse espacio alguno para el elemento en
-                el esquema de la página. Es posicionado con relación al bloque contenedor (en-US) inicial establecido
-                por el viewport, excepto cuando uno de sus ancestros tiene una propiedad transform, perspective, o
-                filter establecida en algo que no sea none (ver CSS Transforms Spec), en cuyo caso ese ancestro se
-                comporta como el bloque contenedor. (Notar que hay inconsistencias del navegador con perspective y
-                filter contribuyendo a la formación del bloque contenedor.) Su posición final es determinada por los
-                valores de top, right, bottom, y left.
+    <li><b>Fixed</b></li>
+    <p>
+        El elemento es removido del flujo normal del documento, sin crearse espacio alguno para el elemento en
+        el esquema de la página. Es posicionado con relación al bloque contenedor (en-US) inicial establecido
+        por el viewport, excepto cuando uno de sus ancestros tiene una propiedad transform, perspective, o
+        filter establecida en algo que no sea none (ver CSS Transforms Spec), en cuyo caso ese ancestro se
+        comporta como el bloque contenedor. (Notar que hay inconsistencias del navegador con perspective y
+        filter contribuyendo a la formación del bloque contenedor.) Su posición final es determinada por los
+        valores de top, right, bottom, y left.
 
-                Estos valores siempre crean un nuevo contexto de apilamiento. En documentos impresos, el elemento se
-                coloca en la misma posición en cada página.
-            </p>
-            <p><b>Por ejemplo:</b></p>
+        Estos valores siempre crean un nuevo contexto de apilamiento. En documentos impresos, el elemento se
+        coloca en la misma posición en cada página.
+    </p>
+    <p><b>Por ejemplo:</b></p>
 
 
-            <li><b>Sticky</b></li>
-            <li><b>Static</b></li>
-            <li><b>Initial</b></li>
-            <li><b>Inhertial</b></li>
-        </ul>
+    <li><b>Sticky</b></li>
+    <p>
+        El elemento es posicionado de acuerdo al flujo normal del documento, y luego es desplazado con relación a su
+        ancestro que se desplace más cercano y su bloque contenedor (en-US) (ancestro en nivel de bloque más cercano)
+        incluyendo elementos relacionados a tablas, basados en los valores de top, right, bottom, y left. El
+        desplazamiento no afecta la posición de ningún otro elmento.
+
+        Estos valores siempre crean un nuevo contexto de apilamiento. Nótese que un elemento sticky se "adhiere" a su
+        ancestro más cercano que tiene un "mecanismo de desplazamiento" (creado cuando el overflow es hidden, scroll,
+        auto, o bien overlay), aún si ese ancestro no es el ancestro con desplazamiento más cercano. Esto inhibe
+        efectivamente el comportamiento "sticky" (ver el Github issue en W3C CSSWG).
+    </p>
+    <p>Por ejemplo:</p>
+    <ul>
+        <h3> Vengadores Originales </h3>
+        <li>Hulk</li>
+        <li>Hawkeye</li>
+        <li>Black Widow</li>
+        <li>Iron Man</li>
+        <li>Capitan América</li>
+        <li>Thor</li>
+    </ul>
+
+    <ul>
+        <h3>Vengadores nuevos</h3>
+        <li>Antman</li>
+        <li>Wanda</li>
+        <li>Dr Strange</li>
+        <li>Black Panther</li>
+        <li>Capitana Marvel</li>
+        <li>Wasp</li>
+        <li>Visión</li>
+        <li>Spiderman</li>
+    </ul>
+
+    <ol>
+        <h3>Top de villanos</h3>
+    </ol>
+
+    <li><b>Static</b></li>
+    <p>
+        El elemento es posicionado de acuerdo al flujo normal del documento. Las propiedades top, right, bottom, left, and z-index no tienen efecto. Este es el valor por defecto.
+    </p>
+
+    <li><b>Initial</b></li>
+    <li><b>Inhertial</b></li>
+    </ul>
     </div>
 
     <h2>Este es un ejemplo de posicionamiento:</h2>
