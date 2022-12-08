@@ -1,0 +1,51 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: rgb(1, 1, 1);
+    background: linear-gradient(279deg, rgba(1, 1, 1, 1) 11%, rgba(142, 142, 142, 1) 51%, rgba(19, 19, 19, 1) 88%);
+}
+
+section {
+    margin: 50px;
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+}
+.card {
+    background-color: midnightblue;
+    width: 400px;
+    height: 1000px;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    margin: 30px;
+}
+.item{
+    width: 60px;
+    height: 60px;
+    background-color: orangered;
+    position: absolute;
+    left: 165px;
+    top: 570px;
+    border-radius: 50%;
+    overflow: hidden;
+    justify-content: center;
+}
+.item img{
+    width: 100%;
+}
+.img img{
+    width: 100%;
+    
+}
+.info{
+    text-align: center;
+}
+h2, p{
+    color: aliceblue;
+}
+p{
+    margin: 30px;
+    margin-top: 5px;
+    font-size: small;
+}
