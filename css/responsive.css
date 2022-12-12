@@ -1,0 +1,11 @@
+div{
+    background: tomato;
+}
+@media (max-width: 650px){
+    div{
+        background-color: purple;
+        color: azure;
+        text-align: center;
+    }
+
+}

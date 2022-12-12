@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/medidas.css">
+    <title>Medidas</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Medidas en Web Design</h1>
+        <p>
+            Gracias a las unidades de medida, puedes establecer el tamaño que tienen ciertos elementos, su espacio, el
+            tamaño de la tipografía, etc.
+
+            Todas las unidades de medidas pueden ser definidas en números negativos o positivos, aunque no todas las
+            propiedades de CSS aceptan números negativos (por ejemplo, font-size solo admite positivos).
+
+            A la hora de clasificar las unidades de medida en CSS, debes saber que se dividen principalmente en dos
+            grupos: fijas y relativas.
+        </p>
+        <h2>Unidades absolutas</h2>
+        <p>
+            Las unidades fijas son absolutas, es decir, no dependen del contexto donde se estén aplicando.
+
+            La más conocida es el píxel que, como ya sabrás, es un punto físico de tu pantalla, cuyo tamaño siempre es
+            el mismo (en tu pantalla, ya que en cierto modo depende de la densidad de píxeles).
+
+            La unidades absolutas son:
+
+        <ul>
+            <li>cm: centímetros.</li>
+            <li> mm: milímetros.</li>
+            <li>in: inches,pulgadas. Una pulgada equivale a 2,54 centímetros, o 96 píxeles.</li>
+            <li>pc: picas. Una pica equivale a 12 puntos, o 4,43 milímetros.</li>
+            <li>pt: puntos.</li>
+            <li>px*: píxeles.</li>
+        </ul>
+
+        *: Los píxeles, como ya he comentado, son relativos a la densidad de píxeles del monitor donde se muestran.
+        Algunas personas lo consideran una medida relativa, aunque es más común decir que es absoluta, ya que la
+        dependencia es a un dispositivo físico.
+
+        Seguramente, en más de una ocasión habrás utilizado píxeles en CSS, por lo que sabrás que su uso es
+        realmente sencillo para hacer un layout: solo tendrías que indicar, por ejemplo, el alto y ancho en píxeles
+        de cada elemento. Esto es lo que conocemos como diseño pixel-perfect.
+
+        Puede que hace años fuera una opción muy recomendable, pero hoy en día con la importancia del diseño
+        responsive, debemos tener en cuenta la multitud de dispositivos con diferentes pantallas que puedan acceder
+        a un sitio web. Es por esto que el siguiente tipo de unidades, las relativas, son las más recomendables hoy
+        en día. Veamos en qué consisten.
+        </p>
+        <h2>Unidades relativas</h2>
+        <p>
+            Como he comentado, con la aparición del diseño responsive apareció una nueva necesidad: unidades de medida
+            más flexibles. Estas son las que llamamos unidades relativas, ya que se basan en el contexto y otros
+            factores externos. Todo esto hace que sea algo más complejo trabajar con ellas, pero eso no quita su
+            importancia.
+
+            La unidades relativas las podemos clasificar también en función de su contexto, obteniendo las relativas a
+            la tipografía, al viewport (ventana) y una medida más espcial, el porcentaje.
+        </p>
+        <h3>Relativas a la tipografía</h3>
+        <p>
+            Son relativas al tamaño de fuente predefinido, y son:
+
+        <ul>
+            <li>ex: también conocida como x-height. Está definida por la altura del carácter x, en minúsculas, con la
+                tipografía y tamaño del contexto. En la práctica, su uso es muy poco habitual. Puede ser útil para
+                ajustar
+                el tamaño de una imagen que quieras mostrar en la misma línea del texto, manteniendo la armonía.</li>
+            <li>ch: es similar a la anterior, solo que esta está basada en el ancho del carácter cero (0). Al igual que
+                ex,
+                si se cambia la tipografía, probablemente cambie este valor.</li>
+            <li>em: la unidad em es equivalente al tamaño de fuente del elemento base, o del padre. Por ejemplo, si el
+                tamaño de la tipografía del elemento padre es de 25px, entonces el valor 2em corresponderá a 50px (25 x
+                2).
+                Esta unidad sí es muy utilizada y recomendable. No obstante, debes tener en cuenta que toma el valor del
+                padre directo, por lo que puedes obtener resultados no esperados en elementos anidados.</li>
+            <li>rem: es similar a em, pero en este caso el valor siempre es el mismo, ya que parte del tamaño de la
+                tipografía del elemento root (que es el elemento html). Esta unidad facilita mucho el trabajo al
+                desarrollar
+                sitios web responsive, ya que te permite escalar cómodamente.</li>
+
+        </ul>
+        </p>
+        <h3>Relativas al viewport (pantalla)</h3>
+        <p>
+            Las medidas relativas al viewport están basadas en el alto y ancho de la pantalla que está mostrando la web,
+            e incluyen:
+        <ul>
+            <li>vh: viewport height. Corresponde al alto de la pantalla. 1vh equivale a un 1% de la altura. Por ejemplo,
+                si
+                la pantalla del navegador tiene una altura de 900px, 1vh equivaldría a 9px. Es similar al porcentaje,
+                solo
+                que este valor es consistente para todos los elementos, sin depender de las dimensiones del elemento
+                padre.</li>
+            <li> vw: viewport width. Es similar al anterior, solo que en este caso se basa en la anchura de la pantalla.
+                1vw
+                equivale al 1% del ancho. Por ejemplo, si la pantalla tiene un ancho de 1000px, 1vw equivaldrá a 10px.
+                Es
+                muy útil para adaptar contenedores a pantallas con diferente anchura.</li>
+            <li>vmin: viewport minimum. Equivale al 1% del valor mínimo del alto y ancho de la pantalla. Es decir, del
+                valor
+                más pequeño. Por ejemplo, si las dimensiones son 900x800px, 1vmin valdrá 8px (y 100vmin 800px).</li>
+            <li>vmax: viewport maximum. Es similar a la anterior, vmin, pero en este caso se toma el valor mayor. Por
+                ejemplo, si las dimensiones de la pantalla son 900x800px, 1vmax valdrá 9px (y 100vmax serán 900px).</li>
+        </ul>
+        </p>
+        <h3>Porcentajes</h3>
+        <p>
+            El porcentaje, técnicamente, no es una unidad de medida. En cambio, está relacionado por su uso tan habitual
+            en el desarrollo de sitios web responsive.
+
+            Está basado en el valor, con la misma propiedad, del elemento padre. Por ejemplo, si el padre de un elemento
+            tiene 100px de altura, y al elemento hijo se le asigna una altura del 50%, esta será de 50px.
+        </p>
+    </div>
+</body>
+
+</html>
